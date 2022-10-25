@@ -1,13 +1,95 @@
 body {
-    background-color: antiquewhite;
+background-color: #607EAA;
+font-family: 'Montserrat', sans-serif;
 }
 
-.timeElement {
+select {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F9F5EB;;
+}
+
+h1, h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #EAE3D2;
+}
+
+h2 {
+    margin: 0 0 5px 0;
+    font-size: 32px;
+}
+
+.container {
+    background-color: #1C3879;
+    max-width: 600px;
     text-align: center;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 30px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    color: #F9F5EB;
+}
+
+.city:last-child {
+    border: none;
+}
+
+img {
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.cityImage {
+    max-width: 100px;
+}
+
+.defaultCity {
+    display: flex;
+    text-align: left;
+}
+
+.cityNameDate, .time {
+    margin-top: 10px;
+}
+
+.cityNameDate {
+    margin-left: 15px;
+}
+
+.date {
+    opacity: 0.6;
+}
+
+.time {
+    font-size: 38px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.time small {
+    font-size: 20px;
+    font-weight: lighter;
+    vertical-align: middle;
 }
 
 footer {
     text-align: center;
+    opacity: 0.7;
 }

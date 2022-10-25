@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
     <title>World Clock - Lucienne</title>
 </head>
 <body>
-<div class="timeElement">
+<div class="container">
     <h1>World Clock</h1>
     <select>
         <option>Choose a different city</option>
@@ -16,17 +20,33 @@
         <option>Taipei</option>
     </select>
     <div class="city">
-        <h2 class="cityName">Portland</h2>
-        <div class="date">October 23rd 2022</div>
-        <div class="time">06:36 AM</div>
+        <div class="defaultCity">
+            <img src="https://ghosty-production.s3.amazonaws.com/fotospot_spots/Historic-White-Stag-Sign-Fotospot_2764eef79bfe9668469a2db1a4c2ceef/medium.jpg"
+                class="cityImage" alt="">
+            <div class="cityNameDate">
+                <h2 class="cityName">Portland</h2>
+                <div class="date">October 23rd 2022</div>
+            </div>
+        </div>
+        <div>
+            <div class="time">6:36:15 <small>AM</small></div>
+        </div>
     </div>
-     <div class="city">
-        <h2 class="cityName">Amsterdam</h2>
-        <div class="date">October 23rd 2022</div>
-        <div class="time">15:37 AM</div>
+    <div class="city">
+        <div class="defaultCity">
+            <img src="https://64.media.tumblr.com/943a6b17eb86cd92b02d9b3cd660836b/3a05a5428fed9ac6-7a/s540x810/e45638a89bf08cc94da7705deaf2e38661e9a6e2.jpg"
+                class="cityImage" alt="">
+            <div class="cityNameDate">
+                <h2 class="cityName">Amsterdam</h2>
+                <div class="date">October 23rd 2022</div>
+            </div>
+        </div>
+        <div>
+            <div class="time">3:36:15 <small>PM</small></div>
+        </div>
     </div>
 </div>
-<footer>This project was coded by Lucienne de Boer and is <a href="https://github.com/Lucienne85/World-Clock-Lucienne" target="_blank">open source code</a></footer>
+<footer>👩🏼‍💻 Coded by Lucienne de Boer and <a href="https://github.com/Lucienne85/World-Clock-Lucienne" target="_blank">open sourced</a></footer>
 <script src="javascript/index.js"></script>
 </body>
 </html>

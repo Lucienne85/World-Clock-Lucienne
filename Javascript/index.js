@@ -5,4 +5,4 @@ let portlandTime = document.querySelector("#portland-time");
 let portlandCurrentTime = moment().tz("America/Vancouver");
 
 portlandDate.innerHTML = portlandCurrentTime.format("MMMM Do YYYY");
-portlandTime.innerHTML = portlandCurrentTime.format("h:mm:SS [<small>]A[</small>]");
+portlandTime.innerHTML = portlandCurrentTime.format("h:mm:ss [<small>]A[</small>]");

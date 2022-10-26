@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@100&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.38/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Lucienne</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
         <option>Oslo</option>
         <option>Taipei</option>
     </select>
-    <div class="city">
+    <div class="city" id="portland">
         <div class="defaultCity">
             <img src="https://ghosty-production.s3.amazonaws.com/fotospot_spots/Historic-White-Stag-Sign-Fotospot_2764eef79bfe9668469a2db1a4c2ceef/medium.jpg"
                 class="cityImage" alt="">
@@ -29,11 +31,11 @@
             </div>
         </div>
         <div>
-            <div class="time">6:36:15 <small>AM</small></div>
+            <div class="time" id="portland-time">6:36:15 <small>AM</small></div>
         </div>
     </div>
     <div class="city">
-        <div class="defaultCity">
+        <div class="defaultCity" id="amsterdam">
             <img src="https://64.media.tumblr.com/943a6b17eb86cd92b02d9b3cd660836b/3a05a5428fed9ac6-7a/s540x810/e45638a89bf08cc94da7705deaf2e38661e9a6e2.jpg"
                 class="cityImage" alt="">
             <div class="cityNameDate">

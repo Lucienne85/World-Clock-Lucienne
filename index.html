@@ -16,11 +16,12 @@
 <body>
 <div class="container">
     <h1>World Clock</h1>
-    <select>
-        <option>Choose a different city</option>
-        <option>Oslo</option>
-        <option>Taipei</option>
+    <select id="citySelect">
+        <option value="">Choose a different city</option>
+        <option value="Europe/Oslo">Oslo</option>
+        <option value="Asia/Taipei">Taipei</option>
     </select>
+    <div id="city-time-element">
     <div class="city" id="portland">
         <div class="defaultCity">
             <img src="https://ghosty-production.s3.amazonaws.com/fotospot_spots/Historic-White-Stag-Sign-Fotospot_2764eef79bfe9668469a2db1a4c2ceef/medium.jpg"
@@ -46,6 +47,7 @@
         <div>
             <div class="time" id="amsterdam-time">3:36:15 <small>PM</small></div>
         </div>
+    </div>
     </div>
 </div>
 <footer>👩🏼‍💻 Coded by Lucienne de Boer and <a href="https://github.com/Lucienne85/World-Clock-Lucienne" target="_blank">open sourced</a></footer>

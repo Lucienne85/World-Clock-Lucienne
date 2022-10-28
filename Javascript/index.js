@@ -35,15 +35,18 @@ let chosenCityTime = moment().tz(chosenCity);
 let cityTimeElement = document.querySelector("#city-time-element");
 
 cityTimeElement.innerHTML = `
-<div class="city">
-        <div class="defaultCity">
-            <div class="cityNameDate">
-                <h2 class="cityName">${chosenCityName}</h2>
-                <div class="date">${chosenCityTime.format("MMMM Do YYYY")}</div>
-            </div>
+<div class="selectedCity">
+    <div class="defaultCity">
+        <div class="cityNameDate">
+            <h2 class="cityName">${chosenCityName}</h2>
+            <div class="date">${chosenCityTime.format("MMMM Do YYYY")}</div>
         </div>
-        <div class="time">${chosenCityTime.format("h:mm:ss")} <small>${chosenCityTime.format("A")}</small></div>
     </div>
+    <div class="time">${chosenCityTime.format("h:mm:ss")} <small>${chosenCityTime.format("A")}</small></div>
+</div>
+<div class="backToOverview">
+<a href="/" class="backButton">Back to overview</a>
+<div>
 `
 }
 }

@@ -19,6 +19,10 @@ amsterdamTime.innerHTML = amsterdamCurrentTime.format("h:mm:ss [<small>]A[</smal
 }
 
 function updateCityTime(event) {
+determineCityTime();
+setInterval(determineCityTime, 1000);
+
+function determineCityTime(){
 let chosenCity = event.target.value;
 if (chosenCity.length > 0){
 
@@ -37,6 +41,7 @@ cityTimeElement.innerHTML = `
         <div class="time">${chosenCityTime.format("h:mm:ss")} <small>${chosenCityTime.format("A")}</small></div>
     </div>
 `
+}
 }
 }
 

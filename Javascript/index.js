@@ -24,6 +24,10 @@ setInterval(determineCityTime, 1000);
 
 function determineCityTime(){
 let chosenCity = event.target.value;
+if (event.target.value === "current") {
+    chosenCity = moment.tz.guess();
+}
+
 if (chosenCity.length > 0){
 
 let chosenCityName = chosenCity.replace("_", " ").split("/")[1];

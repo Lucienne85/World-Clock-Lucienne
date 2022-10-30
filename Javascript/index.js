@@ -22,6 +22,10 @@ function updateCityTime(event) {
 determineCityTime();
 setInterval(determineCityTime, 1000);
 
+if(event.target.value === "Asia/Taipei") {
+    document.getElementById("container").className ="chosenContainer container";
+}
+
 function determineCityTime(){
 let chosenCity = event.target.value;
 if (event.target.value === "current") {
@@ -29,10 +33,13 @@ if (event.target.value === "current") {
 }
 
 if (chosenCity.length > 0){
-
 let chosenCityName = chosenCity.replace("_", " ").split("/")[1];
 let chosenCityTime = moment().tz(chosenCity);
 let cityTimeElement = document.querySelector("#city-time-element");
+
+if(event.target.value === "America/Lima") {
+    chosenCityName = "Cuzco"
+}
 
 cityTimeElement.innerHTML = `
 <div class="selectedCity">
@@ -46,8 +53,7 @@ cityTimeElement.innerHTML = `
 </div>
 <div class="backToOverview">
 <a href="/" class="backButton">Back to overview</a>
-<div>
-`
+<div>`
 }
 }
 }

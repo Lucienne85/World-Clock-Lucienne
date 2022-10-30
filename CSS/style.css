@@ -37,6 +37,11 @@ h2 {
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.chosenContainer {
+    background: url('images/DSC04361.JPG');
+    background-size: 100% auto;
+    padding: 20px 25px 35px 25px;
+}
 
 .city, .selectedCity {
     display: flex;

@@ -37,8 +37,33 @@ h2 {
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.chosenContainer {
+
+.currentChosen {
+    background: url('images/worldmap.jpeg');
+}
+
+.cuzcoChosen {
+    background: url('images/cuzco.jpeg');
+}
+
+.kigaliChosen {
+    background: url('images/kigali.jpeg');
+}
+
+.osloChosen {
+    background: url('images/Oslo.jpeg');
+}
+
+.sydneyChosen {
+    background: url('images/sydney.jpeg');
+}
+
+.taipeiChosen {
     background: url('images/DSC04361.JPG');
+}
+
+.currentChosen,
+.cuzcoChosen, .kigaliChosen, .osloChosen, .sydneyChosen, .taipeiChosen {
     background-size: 100% auto;
     padding: 20px 25px 35px 25px;
 }

@@ -22,14 +22,11 @@ function updateCityTime(event) {
 determineCityTime();
 setInterval(determineCityTime, 1000);
 
-if(event.target.value === "Asia/Taipei") {
-    document.getElementById("container").className ="chosenContainer container";
-}
-
 function determineCityTime(){
 let chosenCity = event.target.value;
 if (event.target.value === "current") {
     chosenCity = moment.tz.guess();
+    document.getElementById("container").className = "currentChosen container"
 }
 
 if (chosenCity.length > 0){
@@ -55,6 +52,25 @@ cityTimeElement.innerHTML = `
 <a href="/" class="backButton">Back to overview</a>
 <div>`
 }
+}
+if(event.target.value === "Asia/Taipei") {
+    document.getElementById("container").className ="taipeiChosen container";
+}
+
+if(event.target.value === "America/Lima") {
+    document.getElementById("container").className = "cuzcoChosen container"
+}
+
+if(event.target.value === "Europe/Oslo") {
+    document.getElementById("container").className = "osloChosen container"
+}
+
+if(event.target.value === "Australia/Sydney") {
+    document.getElementById("container").className = "sydneyChosen container"
+}
+
+if(event.target.value === "Africa/Kigali") {
+    document.getElementById("container").className = "kigaliChosen container"
 }
 }
 

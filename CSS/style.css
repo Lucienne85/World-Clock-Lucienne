@@ -64,7 +64,8 @@ h2 {
 
 .currentChosen,
 .cuzcoChosen, .kigaliChosen, .osloChosen, .sydneyChosen, .taipeiChosen {
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
     padding: 20px 25px 35px 25px;
 }
 

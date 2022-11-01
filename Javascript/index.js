@@ -53,6 +53,9 @@ cityTimeElement.innerHTML = `
 <div>`
 }
 }
+
+document.getElementById("body").classList.add('bodyChosen')
+
 if(event.target.value === "Asia/Taipei") {
     document.getElementById("container").className ="taipeiChosen container";
 }

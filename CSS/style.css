@@ -1,6 +1,12 @@
 body {
 background-color: #607EAA;
-font-family: 'Montserrat', sans-serif;
+background: url('images/worldmap.jpeg');
+font-family: 'Open Sans', sans-serif;
+}
+
+.bodyChosen {
+    background-image: none;
+    background-color: #1C3879;
 }
 
 select {
@@ -8,12 +14,12 @@ select {
     margin-bottom: 15px;
     border-radius: 5px;
     width: 80%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #F9F5EB;;
 }
 
 h1, h2 {
-    font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 h1 {

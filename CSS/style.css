@@ -1,12 +1,12 @@
 body {
-background-color: #607EAA;
+background-color: #1C3879;
 background: url('images/worldmap.jpeg');
 font-family: 'Open Sans', sans-serif;
 }
 
 .bodyChosen {
     background-image: none;
-    background-color: #1C3879;
+    background-color: #34343a;
 }
 
 select {
@@ -25,6 +25,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 h1 {
     font-size: 40px;
     color: #EAE3D2;
+    margin: 15px 0;
 }
 
 h2 {
@@ -32,14 +33,26 @@ h2 {
     font-size: 32px;
 }
 
+
+.selectContainer {
+background-color: #1C3879;
+max-width: 600px;
+text-align: center;
+margin: 0 auto;
+margin-top: 50px;
+padding: 5px 0;
+border-radius: 15px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .container {
     background-color: #1C3879;
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
-    padding: 5px 15px;
+    padding: 5px 0;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -72,15 +85,23 @@ h2 {
 .cuzcoChosen, .kigaliChosen, .osloChosen, .sydneyChosen, .taipeiChosen {
     background-size: cover;
     background-position: center;
-    padding: 20px 25px 35px 25px;
+    padding: 0 0 150px 0;
 }
 
 .city, .selectedCity {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 15px;
     color: #F9F5EB;
 }
+
+.selectedCity {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    border-radius: 5px;
+    padding: 0 10px 10px 0;
+}
+
 
 .city {
     border-bottom: 1px dashed #EAE3D2;
@@ -135,11 +156,11 @@ img {
 
 .backButton {
     display: inline-block;
-    background-color: #607EAA;
-    color: #F9F5EB;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
     font-size: 12px;
     padding: 5px 10px;
-    margin: 15px;
+    margin: 15px 0 15px 0;
     border: none;
     border-radius: 5px;
     text-align: left;

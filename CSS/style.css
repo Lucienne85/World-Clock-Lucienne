@@ -15,7 +15,7 @@ select {
     width: 100%;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
-    background-color: #F9F5EB;;
+    background-color: #EAE3D2;;
 }
 
 .selectChosen {
@@ -29,11 +29,11 @@ select {
 
 h1, h2 {
 font-family: 'Ubuntu Condensed', sans-serif;
+color: #EAE3D2;
 }
 
 h1 {
     font-size: 40px;
-    color: #EAE3D2;
     margin: 15px 0;
 }
 
@@ -51,7 +51,7 @@ margin: 0 auto;
 margin-top: 50px;
 padding: 5px 0;
 border-radius: 15px;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container {
@@ -60,10 +60,10 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     text-align: center;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 5px 0;
     border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .currentChosen {
@@ -123,7 +123,7 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 img {
     margin-left: 5px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cityImage {
@@ -144,13 +144,14 @@ img {
 }
 
 .date {
-    opacity: 0.6;
+ color: #EAE3D2;
 }
 
 .time {
     font-size: 38px;
     font-weight: bolder;
     margin-right: 5px;
+    color: #EAE3D2;
 }
 
 .time small {
@@ -165,13 +166,19 @@ img {
 
 .backButton {
     display: inline-block;
-    color: white;
+    color: #EAE3D2;
     font-size: 12px;
     margin-bottom: 10px;
     text-decoration: none;
 }
 
 footer {
-    text-align: center;
-    opacity: 0.7;
+    font-size: 12px;
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0.6;
+    background-color: #EAE3D2;
+    color: #1C3879;
+    padding: 1px 4px;
+    border-radius: 3px;
 }

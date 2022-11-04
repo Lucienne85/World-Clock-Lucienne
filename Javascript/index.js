@@ -33,10 +33,15 @@ if (chosenCity.length > 0){
 let chosenCityName = chosenCity.replace("_", " ").split("/")[1];
 let chosenCityTime = moment().tz(chosenCity);
 let cityTimeElement = document.querySelector("#city-time-element");
+let backElement = document.querySelector("#back-button-space");
 
 if(event.target.value === "America/Lima") {
     chosenCityName = "Cuzco"
 }
+
+backElement.innerHTML = `<div class="backToOverview">
+<a href="/" class="backButton">Back to overview</a>
+<div>`
 
 cityTimeElement.innerHTML = `
 <div class="selectedCity">
@@ -47,14 +52,12 @@ cityTimeElement.innerHTML = `
         </div>
     </div>
     <div class="time">${chosenCityTime.format("h:mm:ss")} <small>${chosenCityTime.format("A")}</small></div>
-</div>
-<div class="backToOverview">
-<a href="/" class="backButton">Back to overview</a>
-<div>`
+</div>`
 }
 }
 
 document.getElementById("body").classList.add('bodyChosen')
+document.getElementById("city-select").classList.add('selectChosen')
 
 if(event.target.value === "Asia/Taipei") {
     document.getElementById("container").className ="taipeiChosen container";
@@ -81,5 +84,5 @@ if(event.target.value === "Africa/Kigali") {
 showCurrentTime();
 setInterval(showCurrentTime, 1000);
 
-let citySelector = document.querySelector("#citySelect");
+let citySelector = document.querySelector("#city-select");
 citySelector.addEventListener('change', updateCityTime);

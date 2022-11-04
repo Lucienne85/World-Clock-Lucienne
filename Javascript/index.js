@@ -47,11 +47,11 @@ cityTimeElement.innerHTML = `
 <div class="selectedCity">
     <div class="defaultCity">
         <div class="cityNameDate">
-            <h2 class="cityName">${chosenCityName}</h2>
-            <div class="date">${chosenCityTime.format("MMMM Do YYYY")}</div>
+            <h2 class="cityName darkText">${chosenCityName}</h2>
+            <div class="date darkText">${chosenCityTime.format("MMMM Do YYYY")}</div>
         </div>
     </div>
-    <div class="time">${chosenCityTime.format("h:mm:ss")} <small>${chosenCityTime.format("A")}</small></div>
+    <div class="time darkText">${chosenCityTime.format("h:mm:ss")} <small>${chosenCityTime.format("A")}</small></div>
 </div>`
 }
 }

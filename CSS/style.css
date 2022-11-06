@@ -184,3 +184,51 @@ footer {
     padding: 1px 4px;
     border-radius: 3px;
 }
+
+@media (max-width: 500px) {
+.cityImage {
+    max-width: 90px;
+ }
+h2 {
+    font-size: 30px;
+}
+.date {
+    font-size: 14px;
+}
+ .time {
+    font-size: 34px;
+ }
+}
+
+@media (max-width: 445px) {
+img {
+    display: none;
+}
+h2 {
+    font-size: 32px;
+}
+.date {
+    font-size: 16px;
+}
+.time {
+    font-size: 38px;
+}
+}
+
+@media (max-width: 380px) {
+    .time {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 355px) {
+    h2 {
+        font-size: 28px;
+    }
+    .date {
+    font-size: 12px;
+    }
+    .time {
+        font-size: 28px;
+    }
+}
